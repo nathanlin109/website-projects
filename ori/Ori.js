@@ -15,7 +15,7 @@ document.querySelector("#body").onclick = function(){
   let audio = document.querySelector("#BackgroundSound");
   audio.volume = 0.3;
 
-let modal = document.querySelector("##ContentModal");
+let modal = document.querySelector("#ContentModal");
 modal.onclick = function() {
     if (e.target == modal) {
         modal.style.display = "none";
