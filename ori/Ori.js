@@ -4,7 +4,7 @@ function PlaySound(soundobj) {
 }
 
 let backgroundMusicPlayed = false;
-document.getElementById('body').onclick = function(){
+document.querySelector("#body").onclick = function(){
 	if (backgroundMusicPlayed == false)
 	{
 		PlaySound("BackgroundSound");
@@ -12,19 +12,19 @@ document.getElementById('body').onclick = function(){
 	}
 };
 
-  let audio = document.getElementById("BackgroundSound");
+  let audio = document.querySelector("#BackgroundSound");
   audio.volume = 0.3;
 
-let modal = document.getElementById('#ContentModal');
+let modal = document.querySelector("##ContentModal");
 modal.onclick = function() {
     if (e.target == modal) {
         modal.style.display = "none";
     }
 };
 
-let SprTree = document.getElementById('SprTree');
-let SprTreeImg = document.getElementById("img1");
-let SprTreeText = document.getElementById("caption");
+let SprTree = document.querySelector("#SprTree");
+let SprTreeImg = document.querySelector("#img1");
+let SprTreeText = document.querySelector("#caption");
 SprTree.onclick = function(){
 	modal.style.display = "block";
 	SprTreeImg.src = this.src;
@@ -50,9 +50,9 @@ SprTree.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-let GnsTree = document.getElementById('GnsTree');
-let GnsTreeImg = document.getElementById("img1");
-let GnsTreeText = document.getElementById("caption");
+let GnsTree = document.querySelector("#GnsTree");
+let GnsTreeImg = document.querySelector("#img1");
+let GnsTreeText = document.querySelector("#caption");
 GnsTree.onclick = function(){
 	modal.style.display = "block";
 	GnsTreeImg.src = this.src;
@@ -78,9 +78,9 @@ GnsTree.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-let MtHoru = document.getElementById('MtHoru');
-let MtHoruImg = document.getElementById("img1");
-let MtHoruText = document.getElementById("caption");
+let MtHoru = document.querySelector("#MtHoru");
+let MtHoruImg = document.querySelector("#img1");
+let MtHoruText = document.querySelector("#caption");
 MtHoru.onclick = function(){
 	modal.style.display = "block";
 	MtHoruImg.src = this.src;
@@ -104,9 +104,9 @@ MtHoru.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-let Ruins = document.getElementById('Ruins');
-let RuinsImg = document.getElementById("img1");
-let RuinsText = document.getElementById("caption");
+let Ruins = document.querySelector("#Ruins");
+let RuinsImg = document.querySelector("#img1");
+let RuinsText = document.querySelector("#caption");
 Ruins.onclick = function(){
 	modal.style.display = "block";
 	RuinsImg.src = this.src;
@@ -124,9 +124,9 @@ Ruins.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-let SrwPass = document.getElementById('SrwPass');
-let SrwPassImg = document.getElementById("img1");
-let SrwPassText = document.getElementById("caption");
+let SrwPass = document.querySelector("#SrwPass");
+let SrwPassImg = document.querySelector("#img1");
+let SrwPassText = document.querySelector("#caption");
 SrwPass.onclick = function(){
 	modal.style.display = "block";
 	SrwPassImg.src = this.src;
@@ -158,9 +158,9 @@ SrwPass.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-let VotW = document.getElementById('VotW');
-let VotWImg = document.getElementById("img1");
-let VotWText = document.getElementById("caption");
+let VotW = document.querySelector("#VotW");
+let VotWImg = document.querySelector("#img1");
+let VotWText = document.querySelector("#caption");
 VotW.onclick = function(){
 	modal.style.display = "block";
 	VotWImg.src = this.src;
@@ -183,9 +183,9 @@ VotW.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-let Fields = document.getElementById('Fields');
-let FieldsImg = document.getElementById("img1");
-let FieldsText = document.getElementById("caption");
+let Fields = document.querySelector("#Fields");
+let FieldsImg = document.querySelector("#img1");
+let FieldsText = document.querySelector("#caption");
 Fields.onclick = function(){
 	modal.style.display = "block";
 	FieldsImg.src = this.src;
@@ -194,9 +194,9 @@ Fields.onclick = function(){
 	"is now a desolate area with burning trees and a sense of dread.<br /><br /><br /><br />";
 }
 
-let Swamp = document.getElementById('Swamp');
-let SwampImg = document.getElementById("img1");
-let SwampText = document.getElementById("caption");
+let Swamp = document.querySelector("#Swamp");
+let SwampImg = document.querySelector("#img1");
+let SwampText = document.querySelector("#caption");
 Swamp.onclick = function(){
 	modal.style.display = "block";
 	SwampImg.src = this.src;
@@ -207,9 +207,9 @@ Swamp.onclick = function(){
 	"<a href=http://oriandtheblindforest.wikia.com/wiki/Valley_of_the_Wind>http://oriandtheblindforest.wikia.com/wiki/Valley_of_the_Wind</a></span><br /><br /><br /><br />";
 }
 
-let Glades = document.getElementById('Glades');
-let GladesImg = document.getElementById("img1");
-let GladesText = document.getElementById("caption");
+let Glades = document.querySelector("#Glades");
+let GladesImg = document.querySelector("#img1");
+let GladesText = document.querySelector("#caption");
 Glades.onclick = function(){
 	modal.style.display = "block";
 	GladesImg.src = this.src;
@@ -221,9 +221,9 @@ Glades.onclick = function(){
 	"<a href=http://oriandtheblindforest.wikia.com/wiki/Sunken_Glades>http://oriandtheblindforest.wikia.com/wiki/Sunken_Glades</a></span><br /><br /><br /><br />";
 }
 
-let Grove = document.getElementById('Grove');
-let GroveImg = document.getElementById("img1");
-let GroveText = document.getElementById("caption");
+let Grove = document.querySelector("#Grove");
+let GroveImg = document.querySelector("#img1");
+let GroveText = document.querySelector("#caption");
 Grove.onclick = function(){
 	modal.style.display = "block";
 	GroveImg.src = this.src;
@@ -242,9 +242,9 @@ Grove.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-let BRB = document.getElementById('BRB');
-let BRBImg = document.getElementById("img1");
-let BRBText = document.getElementById("caption");
+let BRB = document.querySelector("#BRB");
+let BRBImg = document.querySelector("#img1");
+let BRBText = document.querySelector("#caption");
 BRB.onclick = function(){
 	modal.style.display = "block";
 	BRBImg.src = this.src;
@@ -255,9 +255,9 @@ BRB.onclick = function(){
 	"<a href=http://oriandtheblindforest.wikia.com/wiki/Black_Root_Burrows>http://oriandtheblindforest.wikia.com/wiki/Black_Root_Burrows</a></span><br /><br /><br /><br />";
 }
 
-let Grotto = document.getElementById('Grotto');
-let GrottoImg = document.getElementById("img1");
-let GrottoText = document.getElementById("caption");
+let Grotto = document.querySelector("#Grotto");
+let GrottoImg = document.querySelector("#img1");
+let GrottoText = document.querySelector("#caption");
 Grotto.onclick = function(){
 	modal.style.display = "block";
 	GrottoImg.src = this.src;
