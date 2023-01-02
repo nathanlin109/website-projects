@@ -1,5 +1,5 @@
 function PlaySound(soundobj) {
-    var thissound=document.getElementById(soundobj);
+    let thissound=document.getElementById(soundobj);
     thissound.play();
 }
 
@@ -12,19 +12,19 @@ document.getElementById('body').onclick = function(){
 	}
 };
 
-  var audio = document.getElementById("BackgroundSound");
+  let audio = document.getElementById("BackgroundSound");
   audio.volume = 0.3;
 
-var modal = document.getElementById('myModal');
+let modal = document.getElementById('#ContentModal');
 modal.onclick = function() {
     if (e.target == modal) {
         modal.style.display = "none";
     }
 };
 
-var SprTree = document.getElementById('SprTree');
-var SprTreeImg = document.getElementById("img1");
-var SprTreeText = document.getElementById("caption");
+let SprTree = document.getElementById('SprTree');
+let SprTreeImg = document.getElementById("img1");
+let SprTreeText = document.getElementById("caption");
 SprTree.onclick = function(){
 	modal.style.display = "block";
 	SprTreeImg.src = this.src;
@@ -35,7 +35,7 @@ SprTree.onclick = function(){
 	"<a href=http://oriandtheblindforest.wikia.com/wiki/Spirit_Tree>http://oriandtheblindforest.wikia.com/wiki/Spirit_Tree</a></span><br /><br /><br /><br />"+
 	"<span class=fonttext>Ori and the Blind Forest was created by Moon Studios in 2015 and the development of the game started back in 2010. " +
 	"According to Mahler, the CEO of the company and former Blizzard employee, Moon Studios was created by and comprised of former employees of " +
-	"various different gaming companies with members \"located anywhere from Austria, to Israel, to the US and Canada, to Australia.\" " +
+	"letious different gaming companies with members \"located anywhere from Austria, to Israel, to the US and Canada, to Australia.\" " +
 	"In order to communicate efficiently in different time zones, the would regularly use tools, such as skype, Google Hangout, Dropbox, TeamViewer, and Google Drive. " +
 	"As the first game they would make, Moon Studios had one chance to make a dent in the gaming industry with Ori and the Blind Forest, and they genuinely did an excellent job in doing so. "+
 	"Being in production for five years before its release, Ori and the Blind Forest strived to innovate the 2-D platformer, not only gameplay wise, but also visually and musically. " +
@@ -50,9 +50,9 @@ SprTree.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var GnsTree = document.getElementById('GnsTree');
-var GnsTreeImg = document.getElementById("img1");
-var GnsTreeText = document.getElementById("caption");
+let GnsTree = document.getElementById('GnsTree');
+let GnsTreeImg = document.getElementById("img1");
+let GnsTreeText = document.getElementById("caption");
 GnsTree.onclick = function(){
 	modal.style.display = "block";
 	GnsTreeImg.src = this.src;
@@ -78,9 +78,9 @@ GnsTree.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var MtHoru = document.getElementById('MtHoru');
-var MtHoruImg = document.getElementById("img1");
-var MtHoruText = document.getElementById("caption");
+let MtHoru = document.getElementById('MtHoru');
+let MtHoruImg = document.getElementById("img1");
+let MtHoruText = document.getElementById("caption");
 MtHoru.onclick = function(){
 	modal.style.display = "block";
 	MtHoruImg.src = this.src;
@@ -104,9 +104,9 @@ MtHoru.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var Ruins = document.getElementById('Ruins');
-var RuinsImg = document.getElementById("img1");
-var RuinsText = document.getElementById("caption");
+let Ruins = document.getElementById('Ruins');
+let RuinsImg = document.getElementById("img1");
+let RuinsText = document.getElementById("caption");
 Ruins.onclick = function(){
 	modal.style.display = "block";
 	RuinsImg.src = this.src;
@@ -124,9 +124,9 @@ Ruins.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var SrwPass = document.getElementById('SrwPass');
-var SrwPassImg = document.getElementById("img1");
-var SrwPassText = document.getElementById("caption");
+let SrwPass = document.getElementById('SrwPass');
+let SrwPassImg = document.getElementById("img1");
+let SrwPassText = document.getElementById("caption");
 SrwPass.onclick = function(){
 	modal.style.display = "block";
 	SrwPassImg.src = this.src;
@@ -158,9 +158,9 @@ SrwPass.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var VotW = document.getElementById('VotW');
-var VotWImg = document.getElementById("img1");
-var VotWText = document.getElementById("caption");
+let VotW = document.getElementById('VotW');
+let VotWImg = document.getElementById("img1");
+let VotWText = document.getElementById("caption");
 VotW.onclick = function(){
 	modal.style.display = "block";
 	VotWImg.src = this.src;
@@ -183,9 +183,9 @@ VotW.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var Fields = document.getElementById('Fields');
-var FieldsImg = document.getElementById("img1");
-var FieldsText = document.getElementById("caption");
+let Fields = document.getElementById('Fields');
+let FieldsImg = document.getElementById("img1");
+let FieldsText = document.getElementById("caption");
 Fields.onclick = function(){
 	modal.style.display = "block";
 	FieldsImg.src = this.src;
@@ -194,9 +194,9 @@ Fields.onclick = function(){
 	"is now a desolate area with burning trees and a sense of dread.<br /><br /><br /><br />";
 }
 
-var Swamp = document.getElementById('Swamp');
-var SwampImg = document.getElementById("img1");
-var SwampText = document.getElementById("caption");
+let Swamp = document.getElementById('Swamp');
+let SwampImg = document.getElementById("img1");
+let SwampText = document.getElementById("caption");
 Swamp.onclick = function(){
 	modal.style.display = "block";
 	SwampImg.src = this.src;
@@ -207,9 +207,9 @@ Swamp.onclick = function(){
 	"<a href=http://oriandtheblindforest.wikia.com/wiki/Valley_of_the_Wind>http://oriandtheblindforest.wikia.com/wiki/Valley_of_the_Wind</a></span><br /><br /><br /><br />";
 }
 
-var Glades = document.getElementById('Glades');
-var GladesImg = document.getElementById("img1");
-var GladesText = document.getElementById("caption");
+let Glades = document.getElementById('Glades');
+let GladesImg = document.getElementById("img1");
+let GladesText = document.getElementById("caption");
 Glades.onclick = function(){
 	modal.style.display = "block";
 	GladesImg.src = this.src;
@@ -221,9 +221,9 @@ Glades.onclick = function(){
 	"<a href=http://oriandtheblindforest.wikia.com/wiki/Sunken_Glades>http://oriandtheblindforest.wikia.com/wiki/Sunken_Glades</a></span><br /><br /><br /><br />";
 }
 
-var Grove = document.getElementById('Grove');
-var GroveImg = document.getElementById("img1");
-var GroveText = document.getElementById("caption");
+let Grove = document.getElementById('Grove');
+let GroveImg = document.getElementById("img1");
+let GroveText = document.getElementById("caption");
 Grove.onclick = function(){
 	modal.style.display = "block";
 	GroveImg.src = this.src;
@@ -242,9 +242,9 @@ Grove.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var BRB = document.getElementById('BRB');
-var BRBImg = document.getElementById("img1");
-var BRBText = document.getElementById("caption");
+let BRB = document.getElementById('BRB');
+let BRBImg = document.getElementById("img1");
+let BRBText = document.getElementById("caption");
 BRB.onclick = function(){
 	modal.style.display = "block";
 	BRBImg.src = this.src;
@@ -255,9 +255,9 @@ BRB.onclick = function(){
 	"<a href=http://oriandtheblindforest.wikia.com/wiki/Black_Root_Burrows>http://oriandtheblindforest.wikia.com/wiki/Black_Root_Burrows</a></span><br /><br /><br /><br />";
 }
 
-var Grotto = document.getElementById('Grotto');
-var GrottoImg = document.getElementById("img1");
-var GrottoText = document.getElementById("caption");
+let Grotto = document.getElementById('Grotto');
+let GrottoImg = document.getElementById("img1");
+let GrottoText = document.getElementById("caption");
 Grotto.onclick = function(){
 	modal.style.display = "block";
 	GrottoImg.src = this.src;
@@ -282,7 +282,7 @@ Grotto.onclick = function(){
 	"<p> </p><br /><br /><br /><br />";
 }
 
-var span = document.querySelector(".close");
+let span = document.querySelector(".close");
 
 span.onclick = function() {
 	modal.style.display = "none";
