@@ -1,0 +1,63 @@
+/*HTML sections*/
+body, html {
+    font-size: 2vw;
+    color: #c0c0c0;
+    text-shadow: 2px 2px black;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background-image: url("../media/images/table-top.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*IDs*/
+#home {
+    position: absolute;
+    right: 5.5%;
+    top: 11.5%;
+    border: solid;
+    border-color: coral;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 1.5vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    padding: .5%;
+    cursor: pointer;
+}
+
+
+/*Loads in custom font*/
+@font-face {
+    font-family: "CustomFont";
+    src: url("../media/font/CasinoShadow-Italic.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: CustomFont;
+    color: black;
+    text-shadow: 2px 2px #ffffff;
+    font-size: 85px;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    text-align: center;
+}
+
+h2 {
+    font-family: CustomFont;
+    color: black;
+    text-shadow: 2px 2px #ffffff;
+}

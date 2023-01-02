@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>~Gif Finder~</title>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<script src="js/main.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!--Title-->
+		<header>
+			<h1>~Gif Finder~</h1>
+		</header>
+
+		<div id="allWidgets">
+
+			<!--Search Bar-->
+			<div class="widgets">
+				<h3>Search:</h3>
+				<input id="searchterm" size="20" maxlength="20" list="previousSearches"/>
+				<datalist id="previousSearches">
+				</datalist>
+			</div>
+
+			<!--Result #-->
+			<div class="widgets">
+				<h3># of results:</h3>
+				<select id="limit">
+					<option value="5">5</option>
+					<option value="10" selected>10</option>
+					<option value="25">25</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+				</select>
+			</div>
+
+			<!--Buttons-->
+			<div class="widgets">
+				<button type="button" id="search" class="purple">Generate GIFs!<br />(◠‿◠)</button>
+				<button type="button" id="load" class="purple favLoad">Load Favorites!<br />(◠‿◠)</button>
+			</div>
+
+		</div>
+
+		<!--Labels-->
+		<div id="status"><h3>Awaiting Search!</h3></div>
+		<div id="loader"></div>
+		<hr>
+
+		<h2>Results:</h2>
+
+		<!--Next Previous-->
+		<div id="topButtons"></div>
+
+		<!--Content-->
+		<div id="content">
+			<h3>No data yet!</h3>
+		</div>
+
+		<!--Next Previous-->
+		<div id="bottomButtons"></div>
+
+		
+		<footer>
+				<h3><a href="documentation.html">Documentation</a></h3>
+		</footer>
+
+	</body>
+
+
+
+</html>

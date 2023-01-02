@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Blackjack</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+
+<body>
+    <!--Audio-->
+    <audio id="ambience" src="media/sounds/ambience.mp3" loop="loop"></audio>
+    <audio id="shuffle" src="media/sounds/card-shuffle.mp3"></audio>
+    <audio id="card-flip" src="media/sounds/card-flip.wav"></audio>
+
+    <!--Title    <form action = "documentation.html">
+        <input type = "submit" value="test"/>
+    </form>-->
+    <h1>Blackjack</h1>
+
+    <!--UI-->
+    <div id="UI">
+
+        <!--Cards-->
+        <div id="main"></div>
+
+        <img src="media/images/chips/blue.png" alt="" class="chip">
+        <img src="media/images/chips/red.png" alt="" class="chip">
+        <img src="media/images/chips/black.png" alt="" class="chip">
+
+        <!--Reset-->
+        <img src="media/images/reset.png" alt="" id="reset">
+
+        <!--Hit-->
+        <button type="button" id="hit">Hit</button>
+
+        <!--Stand-->
+        <button type="button" id="stand">Stand</button>
+
+        <!--Player Total-->
+        <div id="playerTotal"></div>
+
+        <!--Opponent Total-->
+        <div id="opponentTotal"></div>
+
+        <!--Opponent Stand-->
+        <div id="opponentStand"></div>
+
+        <!--Money-->
+        <div id="playerMoney"></div>
+
+        <!--Bet-->
+        <div id="currentBet"></div>
+
+        <!--Winner-->
+        <div id="result"></div>
+
+        <!--Documentation-->
+        <div id="documentation"></div>
+
+    </div>
+    <script src="js/classes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

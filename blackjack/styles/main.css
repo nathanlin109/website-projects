@@ -1,0 +1,263 @@
+/*HTML sections*/
+body, html {
+    font-family: CustomFont;
+    font-size: 2vw;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+body {
+    position: relative;
+    background-image: url("../media/images/table-top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main {
+    position: absolute;
+    margin-left: -8%;
+    top: 0%;
+    width: 120%;
+    height: 120%;
+}
+
+
+/*IDs*/
+#UI{
+    text-align: left;
+    position: relative;
+    height: 80%;
+}
+
+#reset {
+    position: absolute;
+    width: 4%;
+    left: 2%;
+    top: 0%;
+    cursor: pointer;
+}
+
+#hit {
+    position: absolute;
+    left: 8%;
+    top: 55%;
+}
+
+#stand {
+    position: absolute;
+    left: 8%;
+    top: 73%;
+}
+
+#playerTotal {
+    position: absolute;
+    right: 8%;
+    top: 70%;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 2.7vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5); 
+    padding: .5%;
+}
+
+#opponentTotal {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    border: solid;
+    border-color: coral;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 2.7vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    padding: .5%;
+}
+
+#opponentStand {
+    position: absolute;
+    left: 47.5%;
+    top: 15%;
+    border: solid;
+    border-color: coral;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 2.7vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    padding: .5%;
+}
+
+#playerMoney {
+    position: absolute;
+    width: 10%;
+    left: 8%;
+    top: 20%;
+    border: solid;
+    border-color: coral;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 2.7vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    padding: .5%;
+}
+
+#currentBet {
+    position: absolute;
+    width: 5%;
+    left: 22%;
+    top: 20%;
+    border: solid;
+    border-color: coral;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 2.7vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    padding: .5%;
+}
+
+#result {
+    position: absolute;
+    left: 42.5%;
+    top: 40%;
+    border: solid;
+    border-color: coral;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 2.7vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    padding: .5%;
+}
+
+#documentation {
+    position: absolute;
+    right: 3%;
+    top: -5%;
+    border: solid;
+    border-color: coral;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 1.5vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+    padding: .5%;
+    cursor: pointer;
+}
+
+
+/*Loads in custom font*/
+@font-face {
+    font-family: "CustomFont";
+    src: url("../media/font/CasinoShadow-Italic.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    text-shadow: 2px 2px #ffffff;
+    font-size: 85px;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+}
+
+
+/*Styles for buttons*/
+button {
+    cursor: pointer;
+    width: 20%;
+    height: 10%;
+    background: -webkit-linear-gradient(#FF7300, #FFF100, #FF7300);
+    border-color: coral;
+    color: rgb(0, 148, 7);
+    outline: none;
+    font-size: 2.7vw;
+    border-radius: 25px;
+    font-family: CustomFont;
+    box-shadow: 10px 10px 5px rgb(0, 29, 5);
+}
+
+
+/*Styles cards*/
+.rowOne{
+    width: 12%;
+    left: 0;
+    top: 0;
+}
+
+.rowTwo{
+    position: absolute;
+    width: 12%;
+    bottom: -10%;
+}
+
+.rowThree{
+    position: absolute;
+    width: 12%;
+    bottom: -20%;
+}
+
+.rowFour{
+    position: absolute;
+    width: 12%;
+    bottom: -30%;
+}
+
+
+/*Styles character card hand*/
+.hand {
+    position: relative;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+/*Styles Chips*/
+.chip {
+    width: 5%;
+    cursor: pointer;
+    position: relative;
+    left: 10%;
+    padding: .5%; 
+}
+
+
+/*Visablility*/
+.invisible {
+    visibility: hidden;
+}
+
+
+
+
+
+
+

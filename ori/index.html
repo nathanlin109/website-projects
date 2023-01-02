@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ori and the Blind Forest</title>
+	<link rel="stylesheet" href="Ori.css" type="text/css" />
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body id="body">
+
+	<iframe src="Media/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+	<audio id="BackgroundSound" src="Media/BackgroundSounds.mp3" autoplay loop>
+	</audio>
+	<audio id='SprTreeSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='GnsTreeSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='MtHoruSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='RuinsSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='SpSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='VotWSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='FieldsSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='SwampSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='GladesSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='GroveSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='BRBSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+	<audio id='GrottoSound' src='Media/HoverSoundLoud.mp3'>
+	</audio>
+
+	<h1 style="text-align:center; margin:0; padding:0;">
+		Ori and the Blind Forest
+	</h1>
+
+	<!--The alt is the text that shows in popup-->
+	<div class="SprTree" onmouseover="PlaySound('SprTreeSound')">
+		<figure>
+			<img id="SprTree" src="Media/SpiritTree.jpg" alt="Spirit Tree" />
+		</figure>
+		<span>Explore the Background of Ori</span>
+	</div>
+
+	<div class="GnsTree" onmouseover="PlaySound('GnsTreeSound')">
+		<figure>
+			<img id="GnsTree" src="Media/GinsoTree.jpg" alt="Ginso Tree" />
+		</figure>
+		<span>Explore the Music behind Ori</span>
+	</div>
+
+	<div class="MtHoru" onmouseover="PlaySound('MtHoruSound')">
+		<figure>
+			<img id="MtHoru" src="Media/MountHoru.jpg" alt="Mount Horu" />
+		</figure>
+		<span>Check out the Sources used</span>
+	</div>
+
+	<div class="Ruins" onmouseover="PlaySound('RuinsSound')">
+		<figure>
+			<img id="Ruins" src="Media/ForlornRuins.jpg" alt="Forlorn Ruins" />
+		</figure>
+		<span>My Contact Information</span>
+	</div>
+
+	<div class="SrwPass" onmouseover="PlaySound('SpSound')">
+		<figure>
+			<img id="SrwPass" src="Media/SorrowPass.jpg" alt="Sorrows Pass" />
+		</figure>
+		<span>Explore the Visuals of Ori</span>
+	</div>
+
+	<div class="VotW" onmouseover="PlaySound('VotWSound')">
+		<figure>
+			<img id="VotW" src="Media/VotW.png" alt="Valley of the Wind" />
+		</figure>
+		<span>Explore the Gameplay of Ori</span>
+	</div>
+
+	<div class="Fields" onmouseover="PlaySound('FieldsSound')">
+		<figure>
+			<img id="Fields" src="Media/HoruFields.png" alt="Horu Fields" />
+		</figure>
+		<span>Horu Fields</span>
+	</div>
+
+	<div class="Swamp" onmouseover="PlaySound('SwampSound')">
+		<figure>
+			<img id="Swamp" src="Media/ThornfeltSwamp.jpg" alt="Thornfelt Swamp" />
+		</figure>
+		<span>Thornfelt Swamp</span>
+	</div>
+
+	<div class="Glades" onmouseover="PlaySound('GladesSound')">
+		<figure>
+			<img id="Glades" src="Media/SunkenGlades.jpg" alt="Sunken Glades" />
+		</figure>
+		<span>Sunken Glades</span>
+	</div>
+
+	<div class="Grove" onmouseover="PlaySound('GroveSound')">
+		<figure>
+			<img id="Grove" src="Media/LostGrove.jpg" alt="Lost Grove" />
+		</figure>
+		<span>Explore the Story of Ori</span>
+	</div>
+
+	<div class="BRB" onmouseover="PlaySound('BRBSound')">
+		<figure>
+			<img id="BRB" src="Media/BRB.jpg" alt="Black Root Burrows" />
+		</figure>
+		<span>Black Root Burrows</span>
+	</div>
+
+	<div class="Grotto" onmouseover="PlaySound('GrottoSound')">
+		<figure>
+			<img id="Grotto" src="Media/MoonGrotto.png" alt="Moon Grotto" />
+		</figure>
+		<span>History of 2D Platformers</span>
+	</div>
+	<!-- learned to do popup images here: https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+	<div id="myModal" class="modal">
+
+		<span class="close">&times;</span>
+
+		<img class="modal-content" id="img1" src=# alt="Images">
+
+		<div id="caption"></div>
+
+
+	</div>
+	<script type="text/javascript" src="Ori.js"></script>
+
+</body>

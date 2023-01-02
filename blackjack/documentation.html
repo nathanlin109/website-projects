@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Blackjack</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/sub.css">
+
+</head>
+
+
+<body>
+
+    <h1>Documentaion</h1>
+
+    <h2>Created By:</h2>
+    <ul>
+        <li>Nathan Lin</li>
+        <li>Carson Lampila</li>
+    </ul>
+
+    <h2>Process:</h2>
+    <ol>
+        <li>12/04/19: Prioritized functionality by creating the deck of cards, opening hand, hitting, standing, end
+            states, ace calculation, and opponent probability. This could only be seen through the console with no
+            visuals being present</li>
+        <li>12/11/19: Focused on making visuals for the functionality, assigned card faces, buttons for hitting and
+            standing, background, and a title.</li>
+        <li>12/11/19: Added feedback for the player, they could no longer see the opponent’s hand or total until either
+            an end state has been reached or both players are ready, created player total count, alerted player when the
+            opponent has stood, and stated the winner of each hand based on their values.</li>
+        <li>12/11/19: Created additional content for the game, the player can now press the refresh icon to start a new
+            hand, added ambient noises, shuffling and flipping sounds, and added the opportunity for the player to place
+            bets
+            on their hand before they hit or stand for the first time and save their total money.</li>
+        <li>12/12/19: Finalized CSS and overall look of the page for a variety of monitor sizes including 1024 x 768.
+        </li>
+    </ol>
+
+    <h2>Work Distribution:</h2>
+    <ul>
+        <li>Both of us met on two sperate occasions and spent a number of hours working collaboratively to develop the
+            logic and look of this game. Around 95% of the game was finished together. Following this we both
+            independently
+            finalized the game by making very minor changes through testing, fixing the
+            logic of the game, and ensuring the game was easily viewable on a variety of page sizes.</li>
+    </ul>
+
+    <h2>Notes:</h2>
+    <ul>
+        <li>Opponent Hit Odds-
+            <ul>
+                <li>Hand Value: &lt; 12 | Bust Odds: 0%</li>
+                <li>Hand Value: 12 | Bust Odds: 31%</li>
+                <li>Hand Value: 13 | Bust Odds: 39%</li>
+                <li>Hand Value: 14 | Bust Odds: 56%</li>
+                <li>Hand Value: 15 | Bust Odds: 58%</li>
+                <li>Hand Value: 16 | Bust Odds: 62%</li>
+                <li>Hand Value: 17 | Bust Odds: 69%</li>
+                <li>Hand Value: 18 | Bust Odds: 77%</li>
+                <li>Hand Value: 19 | Bust Odds: 85%</li>
+                <li>Hand Value: 20 | Bust Odds: 92%</li>
+                <li>Hand Value: 21 | Bust Odds: 100%</li>
+            </ul>
+        </li>
+        <li>The opponent will choose to stand if they do not beat the odds of busting.</li>
+        <li>The opponent can continue to hit after the player has chosen to stand.</li>
+        <li>The opponent hand and total are only shown once one of the end states have been reached.</li>
+        <li>If the player has an ace the value will be recorded as 11 until the value of the hand is over 21 where the
+            value will then be changed to 1. </li>
+        <li>The player cannot hit on a hand value of 21.</li>
+        <li>If either the player or opponent ever busts the game will instantly end.</li>
+        <li>The player must press the refresh icon to begin a new hand.</li>
+        <li>The player can bet on intervals of 5, 10, or 25 by clicking the correspondingly labeled chips.</li>
+        <li>If the player wins, all bets are doubled, if they lose, all bets are lost, if they tie, all bets are
+            returned.</li>
+        <li>If the player loses all of their money, they will be provided with 5 money to restart. </li>
+    </ul>
+
+    <h2>Resources:</h2>
+    <ul>
+        <li>Programing Assistance – w3schools.com</li>
+        <li>Blackjack Rules - blackjack.org</li>
+        <li>Blackjack Strategies – blackjack.org</li>
+        <li>Font - dafont.com</li>
+        <li>Background - cheerspokernh.com</li>
+        <li>Cards – mozavis.kourge.net</li>
+        <li>Poker Chip - pngtube.com</li>
+        <li>Refresh - stickpng.com</li>
+        <li>Sound - freesound.org, youtube.com </li>
+    </ul>
+
+    <div id="home"></div>
+    <script src="js/sub.js"></script>
+</body>
+
+</html>

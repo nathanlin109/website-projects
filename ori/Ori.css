@@ -1,0 +1,627 @@
+/* My own screen shot. Map from the game.*/
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("Media/Ori Map.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/*Font used "Levi Brush" https://fontmeme.com/fonts/levi-brush-font/*/
+
+/*Matches in game font really well*/
+
+@font-face {
+	font-family: 'levibrushregular';
+	src: url('LeviBrush Font/levibrush-webfont.woff2') format('woff2'), url('LeviBrush Font/levibrush-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-family: levibrushregular;
+	color: white;
+	font-size: 3.33vw;
+	text-align: center;
+}
+
+.font {
+	font-size: 24px;
+	color: #DAA520;
+	text-shadow: 1px 1px 2px black, 0 0 7px #008B8B;
+}
+
+.fonturl {
+	color: #778899;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	font-size: 14px;
+}
+
+.fontdesc {
+	color: #778899;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.fontHoru {
+	color: #696969;
+	text-shadow: 1px 1px 2px black, 0 0 40px red, 0 0 10px darkred;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontSprTree {
+	color: #006400;
+	text-shadow: 1px 1px 2px black, 0 0 40px blue, 0 0 10px darkblue;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontRuins {
+	color: #408cff;
+	text-shadow: 1px 1px 2px black, 0 0 40px #D2691E, 0 0 10px #cc3300;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontGnsTree {
+	color: #191919;
+	text-shadow: 1px 1px 2px black, 0 0 40px white, 0 0 10px #99ccff;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontSrwPass {
+	color: #D2691E;
+	text-shadow: 1px 1px 2px black, 0 0 40px white, 0 0 10px darkblue;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontGlades {
+	color: #dddddd;
+	text-shadow: 1px 1px 2px black, 0 0 40px #c495f0, 0 0 10px #8A2BE2;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontGrove {
+	color: #FF7F50;
+	text-shadow: 1px 1px 2px black, 0 0 40px #00FFFF, 0 0 10px #0066a3;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontBRB {
+	color: #333333;
+	text-shadow: 1px 1px 2px black, 0 0 40px #7a2855, 0 0 10px #FF1493;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontSwamp {
+	color: #47a347;
+	text-shadow: 1px 1px 2px black, 0 0 40px #00FFFF, 0 0 10px #0066a3;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontVotW {
+	color: #6699ff;
+	text-shadow: 1px 1px 2px black, 0 0 40px #D2691E, 0 0 10px #ff3800;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontGrotto {
+	color: #336699;
+	text-shadow: 1px 1px 2px black, 0 0 40px #00FFFF, 0 0 10px #0066a3;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fontFields {
+	color: #ff5200;
+	text-shadow: 1px 1px 2px black, 0 0 40px #d4a80f, 0 0 10px #cc9900;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fonttext {
+	text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px blue;
+}
+
+/*Clickable button*/
+
+#SprTree {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 45%;
+	left: 44.53%;
+	height: 15.62%;
+	width: 7.81%;
+	opacity: 0;
+}
+
+.SprTree span {
+	position: absolute;
+	top: 41.5%;
+	left: 41.66%;
+	z-index: -1;
+	display: block;
+	width: 14%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#GnsTree {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 9%;
+	right: 16%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.GnsTree span {
+	position: absolute;
+	top: 5.5%;
+	right: 13.8%;
+	z-index: -1;
+	display: block;
+	width: 13.02%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#MtHoru {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 17%;
+	right: 44.27%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.MtHoru span {
+	position: absolute;
+	top: 13.5%;
+	right: 42.42%;
+	z-index: -1;
+	display: block;
+	width: 13%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#Ruins {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 57%;
+	left: 2.6%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.Ruins span {
+	position: absolute;
+	top: 53%;
+	left: 1.56%;
+	z-index: -1;
+	display: block;
+	width: 12%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#SrwPass {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 7.5%;
+	left: 21.5%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.SrwPass span {
+	position: absolute;
+	top: 26%;
+	left: 19.27%;
+	z-index: -1;
+	display: block;
+	width: 12.5%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#VotW {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 35.19%;
+	left: 25.52%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.VotW span {
+	position: absolute;
+	top: 32%;
+	left: 23.7%;
+	z-index: -1;
+	display: block;
+	width: 13%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#Fields {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 29.5%;
+	right: 31.5%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.Fields span {
+	position: absolute;
+	top: 26%;
+	right: 33%;
+	z-index: -1;
+	display: block;
+	width: 6%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#Swamp {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 31.75%;
+	right: 18.3%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.Swamp span {
+	position: absolute;
+	top: 28.5%;
+	right: 18.75%;
+	z-index: -1;
+	display: block;
+	width: 8.33%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#Glades {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 61%;
+	right: 41.25%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.Glades span {
+	position: absolute;
+	top: 57.5%;
+	right: 41.75%;
+	z-index: -1;
+	display: block;
+	width: 8.07%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#Grove {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 73.61%;
+	right: 28.64%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.Grove span {
+	position: absolute;
+	top: 70.5%;
+	right: 27.75%;
+	z-index: -1;
+	display: block;
+	width: 11%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#BRB {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 58%;
+	right: 20.05%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.BRB span {
+	position: absolute;
+	top: 55%;
+	right: 19.9%;
+	z-index: -1;
+	display: block;
+	width: 9.37%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+#Grotto {
+	border-radius: 150px;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	top: 51%;
+	right: 10.75%;
+	height: 17.7%;
+	width: 8.85%;
+	opacity: 0;
+}
+
+.Grotto span {
+	position: absolute;
+	top: 47.5%;
+	right: 8.75%;
+	z-index: -1;
+	display: block;
+	width: 13%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border-radius: 6px;
+	color: #fff;
+	font-family: levibrushregular;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .65s ease-in-out;
+	transition: .65s ease-in-out;
+	opacity: 0;
+	font-size: 1vw;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 850px;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+.modal-content, #caption, #Pics {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(1)
+	}
+}
+
+.close {
+	position: absolute;
+	top: 1%;
+	right: 5%;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+figure:hover+span {
+	opacity: .8;
+}
