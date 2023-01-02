@@ -16,7 +16,7 @@ document.querySelector("#body").onclick = function(){
   audio.volume = 0.3;
 
 let modal = document.querySelector("#ContentModal");
-modal.onclick = function() {
+modal.onclick = function(e) {
     if (e.target == modal) {
         modal.style.display = "none";
     }
